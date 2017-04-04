@@ -1,3 +1,6 @@
 # Ignore the virtual environment
 venv
 
+# Ignore test reports
+reports
+

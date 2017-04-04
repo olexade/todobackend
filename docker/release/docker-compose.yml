@@ -19,7 +19,7 @@ app:
     - "--die-on-term"
 
 test:
-  image: jmenga/todobackend-specs
+  image: jmenga3/todobackend-specs
   links:
     - nginx
   environment:
@@ -57,11 +57,10 @@ db:
     MYSQL_ROOT_PASSWORD: password
 
 agent:
-  image: jmenga/ansible
-  volumes:
-   - ../../ansible/probe.yml:/ansible/site.yml
+  image: jmenga3/ansible
   links:
     - db
   environment:
     PROBE_HOST: "db"
     PROBE_PORT: "3306"
+  command: ["probe.yml"]

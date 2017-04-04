@@ -1,0 +1,6 @@
+Script started on Tue 14 Mar 2017 06:20:57 PM EET
+ABRT has detected 1 problem(s). For more info run: abrt-cli list --since 1489483515
+[root@openstack todobackend]# exit
+exit
+
+Script done on Tue 14 Mar 2017 06:21:05 PM EET
